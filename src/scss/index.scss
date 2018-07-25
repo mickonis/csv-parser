@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+}
+.app{
+  text-align: center;
+}
+.textarea{
+  background: none;
+  border: 2px solid black;
+  width: 640px;
+  height: 300px;
+  margin: 30px 0 30px;
+  box-sizing: border-box;
+}
+.csv-table{
+  margin: auto;
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 640px; 
+  border-collapse: 
+  collapse; border-spacing: 0;
+  &__head-cell{
+    background: #DFDFDF;
+    font-weight: bold;
+    border: 1px solid transparent;
+    height: 30px; 
+    transition: all 0.3s;
+  }
+  &__row{
+    &:nth-child(even) td { background: #F1F1F1; }   
+    &:nth-child(odd) td { background: #FEFEFE; }
+    td:hover{
+      cursor: pointer;
+      background: #90d4ff;
+    }
+  }
+  &__cell{
+    border: 1px solid transparent;
+    height: 30px; 
+    transition: all 0.3s;
+    background: #FAFAFA;
+    text-align: center;
+    cursor: pointer;
+  }
+}
